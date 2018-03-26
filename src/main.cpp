@@ -2134,9 +2134,9 @@ int64_t GetBlockValue(int nHeight)
      */
     } else if (nHeight > 125146 && nHeight <= Params().DGWStartHeight()) {
         return 17 * COIN;
-    } else if (nHeight > Params().DGWStartHeight() && nHeight <= Params().DGWStartHeight() + 1440) {
+    } else if (nHeight > Params().DGWStartHeight() && nHeight <= 551440) {
         return 0.02 * COIN;
-    } else if (nHeight > Params().DGWStartHeight() + 1440 && nHeight <= 570062) { // 568622 + 1440 = 570062
+    } else if (nHeight > 551440 && nHeight <= 570062) { // 568622 + 1440 = 570062
         return 17 * COIN;
     } else if (nHeight > 570062 && nHeight <= 1013538) {    // 568622+1440=570062   1012098+1440=1013538
         return 11.5 * COIN;
